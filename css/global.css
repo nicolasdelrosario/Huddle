@@ -1,0 +1,195 @@
+@import './modules/button.css';
+
+:root {
+  /* colors */
+  /* color mode HSL(hue, saturation, lightness) */
+
+  /* primary */
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+
+  /* neutral */
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+
+  /* font and typography */
+  --heading-font: "Poppins", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+
+  /* .5rem = 8px | 1rem = 16px */
+  --big-font-size: 2.75rem;
+  --h1-font-size: 1.8rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.625rem;
+
+  /* font weight */
+  --font-normal: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* margins bottom */
+  /* .5rem = 8px | 1rem = 16px */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    /* .5rem = 8px | 1rem = 16px */
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/* base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--very-pale-blue);
+  font-family: var(--body-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* reusable CSS classes */
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  color: var(--very-dark-cyan);
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-2);
+}
+
+.section__subtitle {
+  color: var(--very-dark-cyan);
+  display: block;
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section__text {
+  color: var(--very-dark-cyan);
+  font-size: var(--normal-font-size);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/* Layout */
+.container {
+  margin: 0 var(--mb-1);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+
+@media screen and (min-width: 375px) {
+  body {
+    margin: 0 0 3rem;
+  }
+
+  .container {
+    margin: 0 var(--mb-1-5);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 6rem 0 2rem;
+  }
+
+  .section__title {
+    margin-bottom: var(--mb-3);
+  }
+
+  .section__subtitle {
+    margin-bottom: 4rem
+  }
+
+  .container {
+    max-width: 968px;
+    margin: 0 auto;
+  }
+}
+
+/* font size */
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--font-bold);
+  font-style: normal;
+}
+
+.open-sans-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: var(--font-normal);
+  font-style: normal;
+}
+
+.open-sans-semibold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: var(--font-semi-bold);
+  font-style: normal;
+}
+
+.open-sans-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

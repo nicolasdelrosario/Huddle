@@ -1,0 +1,26 @@
+.flowing-conversation__container {
+  align-items: center;
+  column-gap: 4rem;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(337px, 1fr)
+  );
+  grid-template-areas: 
+  "text"
+  "image"
+}
+
+.flowing-conversation__container > :first-child {
+  grid-area: image;
+}
+
+.flowing-conversation__container > :last-child {
+  grid-area: text;
+}
+
+@media screen and (min-width: 768px) {
+  .flowing-conversation__container {
+    grid-template-areas: 
+    "image text";
+  }
+}

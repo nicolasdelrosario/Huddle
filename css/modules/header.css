@@ -1,0 +1,30 @@
+.header {
+  margin-top: var(--mb-2-5);
+}
+
+.nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-nav {
+  margin: 3rem var(--mb-1-5) 0;
+  max-width: 968px;
+}
+
+.nav-img {
+  width: 70%;
+}  
+
+@media screen and (min-width: 375px) {
+  .container-nav {
+    margin: 3rem var(--mb-1-5);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-nav {
+    padding: 0 1rem;
+    margin: 3rem auto 0;
+  }
+}

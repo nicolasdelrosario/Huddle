@@ -1,0 +1,18 @@
+.bg-img {
+  height: 197px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.bg-img-top {
+  top: -10rem;
+}
+
+.bg-img-bottom {
+  bottom: -10rem;
+}
+
+.bg-img-top-footer {
+  top: -12rem;
+}

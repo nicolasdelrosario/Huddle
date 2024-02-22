@@ -1,32 +1,26 @@
 .btn {
-  padding: 1.25rem 2.5rem;
   border-radius: 2rem;
 }
 
 .btn--primary {
   background-color: var(--pink);
+  box-shadow: 4px 4px 21px 1px rgba(0,0,0,0.28);
   color: var(--very-pale-blue);
+  padding: 1.25rem 4rem;
+  display: inline-flex;
 }
 
 .btn--secondary {
   border: 1px solid var(--light-pink);
   color: var(--light-pink);
-}
-
-.btn__icon {
-  width: 22px;
-  height: 22px;
-}
-
-.btn--flex {
-  display: inline-flex;
-  align-items: center;
+  min-width: 120px;
+  padding: .4rem 1.2rem;
 }
 
 @media screen and (min-width: 768px) {
-  .btn__icon {
-    margin-left: var(--mb-0-5);
-    width: auto;
-    height: auto;
+  .btn--secondary {
+    padding: .4rem 1.5rem;
   }
+
+
 }
